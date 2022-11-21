@@ -3,11 +3,11 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 
-const baseUrl = 'http://143.110.252.72/api/v1/';
+const baseUrl = 'http://45.64.156.214:8000/customers/';
 
 String tag = 'api_provider';
 
-const String strRegister = 'register';
+const String customerJoshReasonToday = 'customer-josh-reason-today';
 
 handleException(error, stacktrace, DioError dioError) {
   debugPrint("Exception occurred: $error stackTrace: $stacktrace");

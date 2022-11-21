@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:logging/logging.dart';
 import 'package:mood_tracker/routes/app_pages.dart';
 import 'package:mood_tracker/routes/app_routes.dart';
 
+import 'Log.dart';
+
 void main() {
+  _initLog();
   runApp(const MyApp());
+}
+
+void _initLog() {
+  Log.init();
+  Log.setLevel(Level.ALL);
 }
 
 class MyApp extends StatelessWidget {
