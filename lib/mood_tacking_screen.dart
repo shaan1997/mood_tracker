@@ -231,7 +231,7 @@ class MoodTrackingScreen extends GetView<MoodTrackingController> {
                           );
                         },
                         drawVerticalLine: true,
-                        verticalInterval: 1.0,
+                        verticalInterval: 4.0,
                         getDrawingVerticalLine: (value) {
                           return FlLine(
                             color: Colors.white24,
